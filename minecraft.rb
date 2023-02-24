@@ -5,11 +5,11 @@
 class Minecraft < Formula
   desc ""
   homepage "https://github.com/mericozkayagan/minecraft"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/mericozkayagan/minecraft/releases/download/v0.0.1/minecraft_0.0.1_darwin_all.tar.gz"
-    sha256 "510df91b32d414e8e0c8b22b85117fab695681997f3bbd91d7025fe9a1377759"
+    url "https://github.com/mericozkayagan/minecraft/releases/download/v0.0.2/minecraft_0.0.2_darwin_all.tar.gz"
+    sha256 "5ac32b551c04acba45c161f62fa38e03fead56b4b2dcf315d8a61db6749fd941"
 
     def install
       bin.install "minecraft"
@@ -18,16 +18,16 @@ class Minecraft < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mericozkayagan/minecraft/releases/download/v0.0.1/minecraft_0.0.1_linux_arm64.tar.gz"
-      sha256 "2d2a0eb54c2d0add3d662ffb79dd29ae2320c5a014aa8e70226188e5657e81a3"
+      url "https://github.com/mericozkayagan/minecraft/releases/download/v0.0.2/minecraft_0.0.2_linux_arm64.tar.gz"
+      sha256 "9bf0976fa300ce26e1306fa4eab88cb3f510c17301f45db0942a9a6739b821bb"
 
       def install
         bin.install "minecraft"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mericozkayagan/minecraft/releases/download/v0.0.1/minecraft_0.0.1_linux_amd64.tar.gz"
-      sha256 "9ab770a79f56d0fb5d6bf7f7ed8026ef1566f23113d7bfc4b26ed371fcd1eef7"
+      url "https://github.com/mericozkayagan/minecraft/releases/download/v0.0.2/minecraft_0.0.2_linux_amd64.tar.gz"
+      sha256 "9474b36871f477e652af13f43bcb47e9bed2112d6687d9e2350585193c21432e"
 
       def install
         bin.install "minecraft"
